@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://unpkg.com; style-src 'self' 'unsafe-inline' https://unpkg.com; img-src 'self' data: https://tile.openstreetmap.org https://unpkg.com; connect-src 'self'; form-action 'self'; base-uri 'self'">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <title>Contact & Branch Map | Urban Crumb Bakery Pretoria CBD & Menlyn</title>
+    <meta name="description" content="Find Urban Crumb Bakery in Pretoria CBD (Church Street) and Menlyn (Atterbury Road). Opening hours, phone numbers and an interactive map.">
+    <meta name="keywords" content="bakery Pretoria, fresh bread Pretoria, custom cakes Pretoria, catering Pretoria, Menlyn bakery">
+    <meta name="author" content="Khutso Mokwatlo">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://mokwatlosara-ux.github.io/Khutsomokwatlo_ST10529579_wede5020_poe1/contact.html">
+
+    <!-- Open Graph / social sharing -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Urban Crumb Bakery">
+    <meta property="og:title" content="Contact & Branch Map | Urban Crumb Bakery Pretoria CBD & Menlyn">
+    <meta property="og:description" content="Find Urban Crumb Bakery in Pretoria CBD (Church Street) and Menlyn (Atterbury Road). Opening hours, phone numbers and an interactive map.">
+    <meta property="og:url" content="https://mokwatlosara-ux.github.io/Khutsomokwatlo_ST10529579_wede5020_poe1/contact.html">
+    <meta property="og:image" content="https://mokwatlosara-ux.github.io/Khutsomokwatlo_ST10529579_wede5020_poe1/images/storefront-800.jpg">
+    <meta property="og:locale" content="en_ZA">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+          integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+</head>
+
+<body>
+
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header class="site-header">
+        <div class="container">
+
+            <a class="brand" href="index.html">
+                <span class="brand__name">Urban Crumb Bakery</span>
+                <span class="brand__tagline">Freshly baked daily</span>
+            </a>
+
+            <!-- Checkbox + label drive the responsive navigation menu (CSS only) -->
+            <input class="nav-toggle" type="checkbox" id="nav-toggle">
+            <label class="nav-toggle-label" for="nav-toggle">
+                <span></span>
+                <span class="visually-hidden">Toggle navigation menu</span>
+            </label>
+
+            <nav class="site-nav" aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="products.html">Products &amp; Services</a></li>
+                    <li><a href="enquiry.html">Enquiry</a></li>
+                    <li><a href="contact.html" aria-current="page">Contact</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <main id="main-content">
+
+        <section class="page-header">
+            <div class="container">
+                <span class="eyebrow">Find Us</span>
+                <h2>Contact Us</h2>
+                <p>Two branches in Pretoria, open seven days a week.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+
+                <div class="branch-grid">
+
+                    <div class="branch">
+                        <h3>Pretoria CBD Branch</h3>
+                        <address>
+                            Urban Crumb Bakery<br>
+                            120 Church Street<br>
+                            Pretoria Central<br>
+                            Pretoria, Gauteng
+                        </address>
+                        <p>Phone: <a href="tel:+27125550147">012 555 0147</a></p>
+                        <p>Email: <a href="mailto:hello@urbancrumb.example">hello@urbancrumb.example</a></p>
+                    </div>
+
+                    <div class="branch">
+                        <h3>Menlyn Branch</h3>
+                        <address>
+                            Urban Crumb Bakery<br>
+                            55 Atterbury Road<br>
+                            Menlyn<br>
+                            Pretoria, Gauteng
+                        </address>
+                        <p>Phone: <a href="tel:+27125550148">012 555 0148</a></p>
+                        <p>Email: <a href="mailto:hello@urbancrumb.example">hello@urbancrumb.example</a></p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Find Us on the Map</h2>
+                <div class="button-group map-buttons">
+                    <button type="button" class="button button--secondary" data-branch="cbd">Show Pretoria CBD</button>
+                    <button type="button" class="button button--secondary" data-branch="menlyn">Show Menlyn</button>
+                </div>
+                <div id="map" class="map" role="region" aria-label="Map showing the Pretoria CBD and Menlyn branches">
+                    <noscript><p>The interactive map needs JavaScript. Our branches are at 120 Church Street, Pretoria Central and 55 Atterbury Road, Menlyn.</p></noscript>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--alt">
+            <div class="container">
+                <h2 class="section-title">Opening Hours</h2>
+                <ul class="hours-list">
+                    <li><span>Monday &ndash; Friday</span><span>07:00 &ndash; 18:00</span></li>
+                    <li><span>Saturday</span><span>08:00 &ndash; 16:00</span></li>
+                    <li><span>Sunday</span><span>08:00 &ndash; 14:00</span></li>
+                </ul>
+                <div class="button-group">
+                    <a class="button button--primary" href="enquiry.html">Send Us a Message</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+
+            <div class="footer-grid">
+
+                <div>
+                    <h3>Urban Crumb Bakery</h3>
+                    <p>Freshly prepared breads, pastries, celebration cakes and catering for Pretoria and surrounds.</p>
+                </div>
+
+                <div>
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="products.html">Products &amp; Services</a></li>
+                        <li><a href="enquiry.html">Enquiry</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3>Get in Touch</h3>
+                    <ul>
+                        <li>120 Church Street, Pretoria Central</li>
+                        <li><a href="tel:+27125550147">012 555 0147</a></li>
+                        <li><a href="mailto:hello@urbancrumb.example">hello@urbancrumb.example</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+                        <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                        <li><a href="https://wa.me/27125550147" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="site-footer__bottom">
+                <p>&copy; 2026 Urban Crumb Bakery. All rights reserved. | Developed by Khutso Mokwatlo (ST10529579)</p>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+            integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="" defer></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/map.js" defer></script>
+
+</body>
+
+</html>

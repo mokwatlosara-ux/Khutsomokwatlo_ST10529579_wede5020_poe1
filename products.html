@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://unpkg.com; style-src 'self' 'unsafe-inline' https://unpkg.com; img-src 'self' data: https://tile.openstreetmap.org https://unpkg.com; connect-src 'self'; form-action 'self'; base-uri 'self'">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <title>Bread, Pastries, Cakes & Catering Menu | Urban Crumb Bakery</title>
+    <meta name="description" content="Browse and search Urban Crumb Bakery products in Pretoria: fresh bread, pastries, custom celebration cakes and catering platters.">
+    <meta name="keywords" content="bakery Pretoria, fresh bread Pretoria, custom cakes Pretoria, catering Pretoria, Menlyn bakery">
+    <meta name="author" content="Khutso Mokwatlo">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://mokwatlosara-ux.github.io/Khutsomokwatlo_ST10529579_wede5020_poe1/products.html">
+
+    <!-- Open Graph / social sharing -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Urban Crumb Bakery">
+    <meta property="og:title" content="Bread, Pastries, Cakes & Catering Menu | Urban Crumb Bakery">
+    <meta property="og:description" content="Browse and search Urban Crumb Bakery products in Pretoria: fresh bread, pastries, custom celebration cakes and catering platters.">
+    <meta property="og:url" content="https://mokwatlosara-ux.github.io/Khutsomokwatlo_ST10529579_wede5020_poe1/products.html">
+    <meta property="og:image" content="https://mokwatlosara-ux.github.io/Khutsomokwatlo_ST10529579_wede5020_1/images/cakes-800.jpg">
+    <meta property="og:locale" content="en_ZA">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header class="site-header">
+        <div class="container">
+
+            <a class="brand" href="index.html">
+                <span class="brand__name">Urban Crumb Bakery</span>
+                <span class="brand__tagline">Freshly baked daily</span>
+            </a>
+
+            <!-- Checkbox + label drive the responsive navigation menu (CSS only) -->
+            <input class="nav-toggle" type="checkbox" id="nav-toggle">
+            <label class="nav-toggle-label" for="nav-toggle">
+                <span></span>
+                <span class="visually-hidden">Toggle navigation menu</span>
+            </label>
+
+            <nav class="site-nav" aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="products.html" aria-current="page">Products &amp; Services</a></li>
+                    <li><a href="enquiry.html">Enquiry</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <main id="main-content">
+
+        <section class="page-header">
+            <div class="container">
+                <span class="eyebrow">Menu</span>
+                <h2>Products &amp; Services</h2>
+                <p>Everything we bake, plus catering and custom orders.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+
+                <div class="toolbar" role="search" aria-label="Search and filter products">
+                    <div class="form__field">
+                        <label for="product-search">Search products</label>
+                        <input type="search" id="product-search" placeholder="e.g. croissant, sourdough" autocomplete="off">
+                    </div>
+                    <div class="form__field">
+                        <label for="product-category">Category</label>
+                        <select id="product-category">
+                            <option value="all">All categories</option>
+                            <option value="Bread">Bread</option>
+                            <option value="Pastries">Pastries</option>
+                            <option value="Cakes">Cakes</option>
+                            <option value="Catering">Catering</option>
+                        </select>
+                    </div>
+                    <div class="form__field">
+                        <label for="product-sort">Sort by</label>
+                        <select id="product-sort">
+                            <option value="default">Featured</option>
+                            <option value="price-asc">Price: low to high</option>
+                            <option value="price-desc">Price: high to low</option>
+                            <option value="name">Name: A to Z</option>
+                        </select>
+                    </div>
+                </div>
+
+                <p id="product-count" class="toolbar__count" role="status" aria-live="polite"></p>
+
+                <div class="card-grid" id="product-grid">
+                    <noscript><p>Please enable JavaScript to browse our products, or <a href="enquiry.html">contact us</a> for our full menu.</p></noscript>
+                </div>
+
+                <div id="product-empty" class="empty" hidden>
+                    <p>No products match your search.</p>
+                    <button type="button" id="product-reset" class="button button--secondary">Clear search and filters</button>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="section section--alt">
+            <div class="container">
+                <h2 class="section-title">Custom Orders</h2>
+                <p class="section-intro">
+                    Customers can contact us for customised products and larger orders. Please allow
+                    at least 48 hours' notice for custom cakes and catering.
+                </p>
+                <div class="button-group">
+                    <a class="button button--primary" href="enquiry.html">Make an Enquiry</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <div class="modal" id="product-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+        <div class="modal__box">
+            <button type="button" class="modal__close" id="modal-close" aria-label="Close product details">&times;</button>
+            <img id="modal-img" src="" alt="" width="800" height="600">
+            <div class="modal__content">
+                <h2 id="modal-title"></h2>
+                <p id="modal-body"></p>
+                <a class="button button--primary" id="modal-enquire" href="enquiry.html">Enquire about this product</a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container">
+
+            <div class="footer-grid">
+
+                <div>
+                    <h3>Urban Crumb Bakery</h3>
+                    <p>Freshly prepared breads, pastries, celebration cakes and catering for Pretoria and surrounds.</p>
+                </div>
+
+                <div>
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="products.html">Products &amp; Services</a></li>
+                        <li><a href="enquiry.html">Enquiry</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3>Get in Touch</h3>
+                    <ul>
+                        <li>120 Church Street, Pretoria Central</li>
+                        <li><a href="tel:+27125550147">012 555 0147</a></li>
+                        <li><a href="mailto:hello@urbancrumb.example">hello@urbancrumb.example</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+                        <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                        <li><a href="https://wa.me/27125550147" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="site-footer__bottom">
+                <p>&copy; 2026 Urban Crumb Bakery. All rights reserved. | Developed by Khutso Mokwatlo (ST10529579)</p>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="js/main.js" defer></script>
+    <script src="js/products.js" defer></script>
+
+</body>
+
+</html>

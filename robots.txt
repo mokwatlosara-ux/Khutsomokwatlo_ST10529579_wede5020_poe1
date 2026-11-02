@@ -1,0 +1,7 @@
+# Urban Crumb Bakery - instructions for search engine crawlers
+User-agent: *
+Allow: /
+Disallow: /screenshots/
+Disallow: /js/
+
+Sitemap: https://mokwatlosara-ux.github.io/Khutsomokwatlo_ST10529579_wede5020_poe3/sitemap.xml
